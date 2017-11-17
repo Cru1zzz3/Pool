@@ -1,0 +1,14 @@
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\bin\Debug\Pool normal.exe.config
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\MainWindow.baml
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\MainWindow.g.cs
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\App.g.cs
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal_MarkupCompile.cache
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.g.resources
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool_normal.Properties.Resources.resources
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.csproj.GenerateResource.Cache
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal_MarkupCompile.lref
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.csprojResolveAssemblyReference.cache
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\bin\Debug\Pool normal.exe
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\bin\Debug\Pool normal.pdb
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.exe
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.pdb
