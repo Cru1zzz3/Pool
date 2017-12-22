@@ -1,0 +1,56 @@
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\bin\Debug\Pool normal.exe.config
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\MainWindow.baml
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\MainWindow.g.cs
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\App.g.cs
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal_MarkupCompile.cache
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.g.resources
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool_normal.Properties.Resources.resources
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.csproj.GenerateResource.Cache
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal_MarkupCompile.lref
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.csprojResolveAssemblyReference.cache
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\bin\Debug\Pool normal.exe
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\bin\Debug\Pool normal.pdb
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.exe
+c:\users\cru1zzz3\documents\visual studio 2012\Projects\Pool normal\Pool normal\obj\Debug\Pool normal.pdb
+E:\Pool normal event handler\Pool normal\bin\Debug\Pool normal.exe.config
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.exe
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.csprojResolveAssemblyReference.cache
+E:\Pool normal event handler\Pool normal\obj\Debug\MainWindow.g.cs
+E:\Pool normal event handler\Pool normal\obj\Debug\App.g.cs
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal_MarkupCompile.cache
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal_MarkupCompile.lref
+E:\Pool normal event handler\Pool normal\bin\Debug\Pool normal.exe
+E:\Pool normal event handler\Pool normal\bin\Debug\Pool normal.pdb
+E:\Pool normal event handler\Pool normal\obj\Debug\MainWindow.baml
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.g.resources
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool_normal.Properties.Resources.resources
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.csproj.GenerateResource.Cache
+E:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.pdb
+H:\Pool normal event handler\Pool normal\bin\Debug\Pool normal.exe.config
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.exe
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.pdb
+H:\Pool normal event handler\Pool normal\bin\Debug\Pool normal.exe
+H:\Pool normal event handler\Pool normal\bin\Debug\Pool normal.pdb
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.csprojResolveAssemblyReference.cache
+H:\Pool normal event handler\Pool normal\obj\Debug\MainWindow.g.cs
+H:\Pool normal event handler\Pool normal\obj\Debug\App.g.cs
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal_MarkupCompile.cache
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal_MarkupCompile.lref
+H:\Pool normal event handler\Pool normal\obj\Debug\MainWindow.baml
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.g.resources
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool_normal.Properties.Resources.resources
+H:\Pool normal event handler\Pool normal\obj\Debug\Pool normal.csproj.GenerateResource.Cache
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\bin\Debug\Pool normal.exe.config
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal.exe
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal.pdb
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\bin\Debug\Pool normal.exe
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\bin\Debug\Pool normal.pdb
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal.csprojResolveAssemblyReference.cache
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\MainWindow.g.cs
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\App.g.cs
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal_MarkupCompile.cache
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal_MarkupCompile.lref
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\MainWindow.baml
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal.g.resources
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool_normal.Properties.Resources.resources
+C:\Users\Cru1zzz3\Desktop\POOL FINISHED AIM\Pool normal\obj\Debug\Pool normal.csproj.GenerateResource.Cache
