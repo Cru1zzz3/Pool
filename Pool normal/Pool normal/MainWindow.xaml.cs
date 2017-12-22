@@ -18,6 +18,26 @@ namespace Pool_normal
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    static class myGlobal{
+
+        public static double Mouse_X = .0;
+        public static double Mouse_Y = .0;
+
+        public static double Center_X = .0;
+        public static double Center_Y = .0;
+
+        public static double BC = .0;
+        public static double CA = .0;
+
+        public static double arctan = .0;
+        public static double gradus = .0;
+
+        public static bool stateOnBall = false;
+        public static bool stateAim = false;
+        public static bool stateOnField = false;
+    };
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,11 +45,8 @@ namespace Pool_normal
 
             InitializeComponent();
     
-            Button button1 = new Button();
-            button1.Width = 50;
-            button1.Height = 50;
-
-            gameField.Children.Add(button1);
+           
+            
 
 
 
@@ -39,12 +56,10 @@ namespace Pool_normal
             
         }
 
-        public class Balls { 
-        
-        
-        
-        
-        
+        public class Balls {
+
+      //  int Vx = this.Resources["DynamicPower"];
+      //  int Vy = this.Resources["DynamicPower"] ;       
         };
 
 
@@ -59,47 +74,177 @@ namespace Pool_normal
                 
             }
 
-         public void Text_Box_Change(object sender, TextChangedEventArgs e)
+         private void Progress_Bar()
          {
-             TextBox textBox = (TextBox)sender;
-             MessageBox.Show(textBox.Text);
-         }
+             gameField.MouseEnter += (ss, ee) =>
+             {
 
-         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-         {
-            
+                 Power_Bar.Height = 0;
+
+                 System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
+                 timer.Interval = TimeSpan.FromMilliseconds(20);
+
+                 int minValue = 0;
+                 int maxValue = 200;
+
+                 timer.Tick += (sss, eee) =>
+                 {
+                     //int match = 0;
+
+                     if (Power_Bar.Height != maxValue)
+                     {
+                         if (maxValue == 100)
+                             Power_Bar.Height += 1;
+
+                         else if (maxValue == 0)
+                             Power_Bar.Height -= 1;
+                     }
+
+                     else if (Power_Bar.Height == maxValue)
+                         maxValue = minValue;
+
+                     if (myGlobal.stateOnField == false)
+                         timer.Stop();
+
+                 };
+                 timer.Start();
+             };
          }
+    
+        
          
           
-               public void Mouse_On_Ball(object sender, MouseEventArgs e)
+         public void Mouse_On_Ball(object sender, MouseEventArgs e)
              {
-                // Cue.Visibility = System.Windows.Visibility.Visible;
-                 Point centerPosition = e.GetPosition(Three_Ball);
+                 Progress_Bar();
+                 myGlobal.stateOnBall = true;
 
+                 Cue.Visibility = System.Windows.Visibility.Visible;
+                
 
+                 Point centerPosition = e.GetPosition(this);
 
-                 this.Resources["DynamicRotation"] = (centerPosition.X + centerPosition.Y);
+                 myGlobal.Center_X = centerPosition.X;
+                 myGlobal.Center_Y = centerPosition.Y;
+
+                 this.Resources["Dynamic_Center_X"] = centerPosition.X.ToString();
+                 this.Resources["Dynamic_Center_Y"] = centerPosition.Y.ToString();            
                               
              }
+
+         public void Mouse_On_Field(object sender, MouseEventArgs e)
+         {
+             
+
+             if (e.LeftButton == MouseButtonState.Pressed)
+             {
+                 if (myGlobal.stateOnBall == true && myGlobal.stateAim == true && myGlobal.stateOnField == true)
+                 {
+                     Power_Bar.Visibility = System.Windows.Visibility.Visible;
+                 }
+                 myGlobal.stateOnField = true;
+                 
+             }
+             
+             
+         }
+
+       
          
+         public void Mouse_Aim(object sender, MouseEventArgs e)
+         {
+             myGlobal.stateAim = true;
+ 
+             Point mousePosition = Mouse.GetPosition(this);
+
+             myGlobal.Mouse_X = mousePosition.X;
+             myGlobal.Mouse_Y = mousePosition.Y;
+
+
+
+
+             Output_X.SetResourceReference(TextBlock.TextProperty, "Dynamic_Mouse_X");
+             Output_Y.SetResourceReference(TextBlock.TextProperty, "Dynamic_Mouse_Y");
+
+
+             this.Resources["Dynamic_Mouse_X"] = (mousePosition.X.ToString());
+             this.Resources["Dynamic_Mouse_Y"] = (mousePosition.Y.ToString());
+
+             // 1 square
+             if  ( (myGlobal.Mouse_X <  myGlobal.Center_X) && (myGlobal.Mouse_Y < myGlobal.Center_Y)) 
+             {
+                 myGlobal.BC = ((myGlobal.Center_X) - (myGlobal.Mouse_X));
+                 myGlobal.CA = ((myGlobal.Center_Y) - (myGlobal.Mouse_Y));
+
+                 myGlobal.arctan = (myGlobal.CA / myGlobal.BC);
+
+                 myGlobal.gradus = (Math.Atan(myGlobal.arctan) * 180) / Math.PI;
+             }
+
+             // 2 square
+             if ((myGlobal.Mouse_X > myGlobal.Center_X) && (myGlobal.Mouse_Y < myGlobal.Center_Y))
+             {
+                 myGlobal.BC = (myGlobal.Mouse_X) - (myGlobal.Center_X);
+                 myGlobal.CA = ((myGlobal.Center_Y) - (myGlobal.Mouse_Y));
+
+                 myGlobal.arctan = ((-myGlobal.CA )/ myGlobal.BC);
+
+                 myGlobal.gradus = ( 180 + ((Math.Atan(myGlobal.arctan) * 180) / Math.PI));
+             }
+
+             // 3 square
+             if ((myGlobal.Mouse_X > myGlobal.Center_X) && (myGlobal.Mouse_Y > myGlobal.Center_Y))
+             {
+                 myGlobal.BC = (myGlobal.Mouse_X) - (myGlobal.Center_X);
+                 myGlobal.CA = (myGlobal.Mouse_Y) - (myGlobal.Center_Y);
+
+                 myGlobal.arctan = (((myGlobal.CA) / myGlobal.BC));
+
+                 myGlobal.gradus = (180 + ((Math.Atan(myGlobal.arctan) * 180) / Math.PI));
+             }
+
+             // 4 square 
+             if ((myGlobal.Mouse_X < myGlobal.Center_X) && (myGlobal.Mouse_Y > myGlobal.Center_Y))
+             {
+                 myGlobal.BC = (myGlobal.Center_X) - (myGlobal.Mouse_X);
+                 myGlobal.CA = (myGlobal.Mouse_Y) - (myGlobal.Center_Y);
+
+                 myGlobal.arctan = (-(myGlobal.CA) / myGlobal.BC);
+
+                 myGlobal.gradus = ( 360 + ((Math.Atan(myGlobal.arctan) * 180) / Math.PI));
+             }
+
+             Convert.ToDouble(this.Resources["Dynamic_Rotation"] = myGlobal.gradus);
+             this.Resources["Dynamic_Rotation_Text"] = myGlobal.gradus.ToString();
+
+         }
+
+
+         public void checkPowerState() {
+             if (myGlobal.stateOnBall == true && myGlobal.stateAim == true && myGlobal.stateOnField == true )
+             {  
+                 MessageBox.Show("Вы нажали на поле!");
+             }
+             myGlobal.stateAim = false;
+         }
+
 
          public void Mouse_Off_Ball(object sender, MouseEventArgs e)
          {
-            // Cue.Visibility = System.Windows.Visibility.Hidden;
-             Point mousePosition = Mouse.GetPosition(this);
-             Point centerPosition = e.GetPosition(NumberOfBall);
-
-             MessageBox.Show("Координаты центра шара x=" + centerPosition.X + "y = " + centerPosition.Y);  
-
-
-            this.Resources["DynamicPositon_X"] = centerPosition.X;
-            this.Resources["DynamicPositon_Y"] = centerPosition.Y;
-
-
-            // this.Resources["DynamicCenter"] = ();
-             MessageBox.Show("Координата мышки x=" + mousePosition.X.ToString() + " y=" + mousePosition.Y.ToString());
-             MessageBox.Show("Координаты центра шара x=" + centerPosition.X + "y = "  + centerPosition.Y );  
+            Cue.Visibility = System.Windows.Visibility.Hidden;
+            Power_Bar.Visibility = System.Windows.Visibility.Hidden;
+            myGlobal.stateOnBall = false;
+            myGlobal.stateAim = false;
+            myGlobal.stateOnField = false;            
          }
+
+         public void Mouse_Off_Field(object sender, MouseEventArgs e)
+         {
+             Power_Bar.Visibility = System.Windows.Visibility.Hidden;
+             myGlobal.stateOnField = false;
+         }
+
+      
 
        
         
